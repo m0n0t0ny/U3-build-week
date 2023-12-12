@@ -1,19 +1,13 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "email": "david@rios.com",
+      "password": "$2a$10$MpwLp0xzBlGXbMNFVRQtEOZIOqc5N.P86CVCabTh8Da532njsqkk.",
+      "name": "david",
+      "surname": "rios",
+      "id": 1
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  "posts": []
 }
