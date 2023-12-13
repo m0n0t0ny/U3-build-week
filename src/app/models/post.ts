@@ -2,7 +2,10 @@ import { Comment } from './comment';
 
 export interface Post {
   userId: number;
-  picture: string;
+  name: string;
+  surname: string;
+  profilePictureUrl: string;
+  imageUrl: string;
   body: string;
-  comments: Comment[] | null;
+  comments?: Comment[];
 }

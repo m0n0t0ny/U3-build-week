@@ -1,1 +1,85 @@
-
+<div class="mt-5 pt-3 row gy-4">
+  <div
+    class="col-12 d-flex justify-content-center"
+    *ngFor="let post of posts; let i = index"
+  >
+    <div class="card bg-0 color-0 border-0 rounded-0 border-top border-color-0">
+      <div>
+        <img
+          src="{{ post.profilePictureUrl }}"
+          alt="{{ post.name }}'s profile picture."
+          width="38"
+          height="38"
+          style="object-fit: cover"
+        /><span>{{ post.name }} {{ post.surname }}</span>
+      </div>
+      <img
+        src="{{ post.imageUrl }}"
+        class="card-img-top rounded-0"
+        alt="{{ post.name }}'s post image."
+      />
+      <div class="card-body px-0 py-3">
+        <div #cardContent>
+          <div
+            class="d-flex align-items-center justify-content-between text-secondary"
+          >
+            <div class="d-flex gap-4 color-0">
+              <i class="fa-regular fa-heart fs-4"></i>
+              <i class="fa-regular fa-comment fs-4"></i>
+              <i class="fa-regular fa-paper-plane fs-4"></i>
+            </div>
+            <div class="color-0"><i class="fa-solid fa-bookmark fs-5"></i></div>
+          </div>
+          <div class="likes fw-bold">218 likes</div>
+          <p class="card-text">
+            {{ post.body }}
+          </p>
+        </div>
+        <a
+          #edit
+          *ngIf="post.userId === this.user?.user?.id"
+          class="btn btn-primary"
+          (click)="
+            bodyInput.value = post.body;
+            imageUrl.value = post.imageUrl;
+            edit.classList.add('d-none');
+            cardContent.className = 'd-none';
+            formContainer.classList.remove('d-none')
+          "
+          >Edit</a
+        >
+        <div #formContainer class="d-none">
+          <form #form="ngForm" (ngSubmit)="edit(form, i + 1)">
+            <div class="form-group">
+              <label for="post-image">Image url</label>
+              <input
+                #imageUrl
+                type="url"
+                name="imageUrl"
+                id="post-image"
+                class="form-control"
+                required
+                ngModel
+              />
+            </div>
+            <div class="form-group">
+              <label for="post-body">Description:</label>
+              <input
+                #bodyInput
+                type="text"
+                name="body"
+                id="post-body"
+                class="form-control"
+                required
+                ngModel
+              />
+            </div>
+            <button [disabled]="form.invalid" class="btn btn-success mt-3">
+              Confirm
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

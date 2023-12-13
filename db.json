@@ -1,13 +1,68 @@
 {
   "users": [
     {
+      "email": "cos@pet.com",
+      "password": "$2a$10$IUWQAfR8vRe/xOFGfv96W.zSTUdv6lxheXqelh648k1j5cpz3F9LS",
+      "name": "Cosmin",
+      "surname": "Pet",
+      "id": 3
+    },
+    {
+      "email": "luca@utz.com",
+      "password": "$2a$10$7oRySesHrWZGH4GFyvGXDecpHjxx9jDXuGTEUadPu/RluqgcPMGU.",
+      "name": "Luca",
+      "surname": "Utz",
+      "id": 4
+    },
+    {
+      "email": "dani@ca.com",
+      "password": "$2a$10$jXycW3FXomGWA.QEZbUTE.FZ9UWX7Tnr4EnER2aqm5fCxR1LDbL0W",
+      "name": "Dani",
+      "surname": "Cagn",
+      "id": 5
+    },
+    {
+      "email": "anto.bertu@gmail.com",
+      "password": "$2a$10$fiuxbKxRJS10lCK8wYD1HenACZgCkjSJLCAngsp83ENrih7VYsrNK",
+      "name": "Antonio",
+      "surname": "Bertuccio",
+      "id": 6
+    },
+    {
+      "email": "info@antoniobertuccio.com",
+      "password": "$2a$10$r3J3JLbaltrTeQ5rkJAvx.Pt3ExkOlYkCAbp3hODM6TCjD2mmfr7q",
+      "name": "Info",
+      "surname": "Bertuccio",
+      "profileImageUrl": "https://avatars.githubusercontent.com/u/46935714?v=4",
+      "id": 7
+    },
+    {
       "email": "david@rios.com",
-      "password": "$2a$10$MpwLp0xzBlGXbMNFVRQtEOZIOqc5N.P86CVCabTh8Da532njsqkk.",
-      "name": "david",
-      "surname": "rios",
-      "id": 1
+      "password": "$2a$10$3kpJWDpeco4AOXa0dwWoGu3bAutJuHc948Cx.dIHv7BpsiapNF0tK",
+      "name": "David",
+      "surname": "Rios",
+      "profileImageUrl": "https://64.media.tumblr.com/d76e7c44f367cf1a06d6b45b47c9111a/tumblr_pmrmln17xI1solxeko1_1280.jpg",
+      "id": 8
     }
   ],
-
-  "posts": []
+  "posts": [
+    {
+      "userId": 8,
+      "name": "David",
+      "surname": "Rios",
+      "profilePictureUrl": "https://64.media.tumblr.com/d76e7c44f367cf1a06d6b45b47c9111a/tumblr_pmrmln17xI1solxeko1_1280.jpg",
+      "imageUrl": "https://www.sorrisi.com/wp-content/uploads/2020/12/aquaman-1.jpg",
+      "body": "Prossimamente....",
+      "id": 1
+    },
+    {
+      "userId": 8,
+      "name": "David",
+      "surname": "Rios",
+      "profilePictureUrl": "https://64.media.tumblr.com/d76e7c44f367cf1a06d6b45b47c9111a/tumblr_pmrmln17xI1solxeko1_1280.jpg",
+      "imageUrl": "https://media-assets.wired.it/photos/63ff35f504b9230fd6839b0b/16:9/w_1280,c_limit/mando%203.jpg",
+      "body": "Se non lo conosci sei g... non si può.",
+      "id": 2
+    }
+  ]
 }
