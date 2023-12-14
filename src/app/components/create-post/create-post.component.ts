@@ -4,7 +4,6 @@ import { AuthData } from 'src/app/auth/auth-data';
 import { AuthService } from 'src/app/auth/auth.service';
 import { PostsService } from 'src/app/services/posts.service';
 import { HttpClient } from '@angular/common/http';
-import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-post',
@@ -20,8 +19,7 @@ export class CreatePostComponent implements OnInit {
   constructor(
     private authSrv: AuthService,
     private postSrv: PostsService,
-    private http: HttpClient,
-    private route: Router
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -39,9 +37,7 @@ export class CreatePostComponent implements OnInit {
       imageUrl: imgUrl,
       body: desc,
     };
-    this.postSrv
-      .newPost(newPost)
-      .subscribe((resp) => this.route.navigate(['/home']));
+    this.postSrv.newPost(newPost).subscribe();
   }
 
   updatePreviewImage() {

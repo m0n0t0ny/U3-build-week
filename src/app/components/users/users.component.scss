@@ -31,8 +31,7 @@
   margin: 80px 0;
 }
 // HEADER //
-
-#user-img {
+#logoProfilo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -57,10 +56,6 @@
   border: 1px solid black;
 }
 
-// POST GRID
-
-.post-img {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  object-fit: cover;
+#post {
+  // max-width: 300px;
 }

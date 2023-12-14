@@ -5,11 +5,7 @@
   >
     <div class="card bg-0 color-0 border-0 rounded-0">
       <div class="mb-3 d-flex justify-content-between px-3">
-        <button
-          [routerLink]="['../', post.userId]"
-          routerLinkActive="active"
-          class="bg-0 border-0 p-0 pic-and-username"
-        >
+        <div class="pic-and-username">
           <img
             class="rounded-circle"
             src="{{ post.profilePictureUrl }}"
@@ -18,7 +14,7 @@
             height="38"
             style="object-fit: cover"
           /><span class="ms-3">{{ post.name }} {{ post.surname }}</span>
-        </button>
+        </div>
         <i class="fa-solid fa-ellipsis d-flex align-items-center"></i>
       </div>
       <img

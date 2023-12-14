@@ -233,15 +233,6 @@
       "postId": 1,
       "body": "Questa è la via.",
       "id": 10
-    },
-    {
-      "userId": 8,
-      "name": "David",
-      "surname": "Rios",
-      "profilePictureUrl": "https://64.media.tumblr.com/d76e7c44f367cf1a06d6b45b47c9111a/tumblr_pmrmln17xI1solxeko1_1280.jpg",
-      "postId": 9,
-      "body": "Ma che razza di foto posti??",
-      "id": 11
     }
   ]
 }
