@@ -20,7 +20,7 @@
           ></a>
         </li>
         <li class="utente" *ngIf="utente">
-          <a class="nav-link">
+          <div class="nav-link">
             <div class="utente d-flex align-items-center">
               <button
                 type="button"
@@ -30,9 +30,12 @@
               >
                 Logout
               </button>
+
               <button
                 type="button"
                 class="btn rounded-circle d-flex align-items-center p-0"
+                [routerLink]="['/users']"
+                routerLinkActive="active"
               >
                 <img
                   src="{{ utente.user.profileImageUrl }}"
@@ -42,8 +45,9 @@
                   style="object-fit: cover"
                   class="d-inline-block align-text-top rounded-circle m-0 p-0"
                 />
-              </button></div
-          ></a>
+              </button>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
