@@ -1,61 +1,76 @@
-// body {
-//   min-height: 100%;
-//   background: linear-gradient(
-//       45deg,
-//       rgba(255, 0, 0, 1) 0%,
-//       rgba(255, 154, 0, 1) 10%,
-//       rgba(208, 222, 33, 1) 20%,
-//       rgba(79, 220, 74, 1) 30%,
-//       rgba(63, 218, 216, 1) 40%,
-//       rgba(47, 201, 226, 1) 50%,
-//       rgba(28, 127, 238, 1) 60%,
-//       rgba(95, 21, 242, 1) 70%,
-//       rgba(186, 12, 248, 1) 80%,
-//       rgba(251, 7, 217, 1) 90%,
-//       rgba(255, 0, 0, 1) 100%
-//     )
-//     0 0/100% 200%;
-//   animation: a 6s linear infinite alternate;
-// }
-// @keyframes a {
-//   from {
-//     background-position: top left;
-//   }
-//   to {
-//     background-position: bottom right;
-//   }
-// }
+// HEADER //
+
+#user-img-container {
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+#user-img-container:hover::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  aspect-ratio: 1 / 1;
+  margin: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: black;
+  content: "Edit";
+  border-radius: 9999px;
+}
+
+#user-img {
+  z-index: 1;
+  border-radius: 9999px;
+  aspect-ratio: 1 / 1;
+}
 
 #bodyUser {
-  height: 100%;
-  margin: 80px 0;
+  width: 100%;
 }
-// HEADER //
-#logoProfilo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border-style: solid;
+
+@media only screen and (min-width: 577px) {
+  #bodyUser {
+  }
 }
-// MAIN //
-// SECTION STORIE IN EVIDENZA //
-#StorieInEvidenzaContainer div {
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  border-style: solid;
+
+@media only screen and (min-width: 769px) {
+  #bodyUser {
+  }
 }
+
+@media only screen and (min-width: 993px) {
+  #bodyUser {
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #bodyUser {
+  }
+}
+
+pre {
+  margin-left: -1.75rem !important;
+  padding: 0 !important;
+  font-family: "Roboto", sans-serif;
+}
+
 // MIDBAR //
 
-#midBar div {
-  border-radius: 20px 20px 0px 0px;
-  border: 1px solid transparent;
+#midBar button {
+  border: none;
+  background-color: transparent;
 }
-#midBar div:hover {
-  border-radius: 20px 20px 0px 0px;
-  border: 1px solid black;
+#midBar button:hover {
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
-#post {
-  // max-width: 300px;
+// POST GRID
+
+.post-img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
 }

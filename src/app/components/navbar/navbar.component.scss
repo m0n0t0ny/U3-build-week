@@ -1,5 +1,6 @@
 nav {
   font-family: "Fontspring";
+  z-index: 9;
 }
 
 #darklight-1 {
@@ -68,4 +69,8 @@ input:checked ~ .moon {
 button:hover {
   filter: brightness(0.9);
   transition: none;
+}
+
+#profile-pic-btn {
+  border: none;
 }
